@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  rgb(252, 239, 222)
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;  
+}
+
+span {
+    text-align: center;
+    align-self: center;
+    font-size: 1.6rem;
+}
+
+section {
+    width: 40%;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "resultat resultat resultat plus"
+    "sept huit neuf moins"
+    "quatre cinq six multi"
+    "un deux trois div"
+    "zro virgule reset egal";
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: bisque;
+
+}
+
+/* button:active {
+    transform: scale(0.9);
+} */
+
+
+.operateur {
+    background-color: orange;
+}
+
+#resultat {
+    grid-area: resultat;
+}
+
+#un {
+    grid-area: un;
+}
+
+#deux {
+    grid-area: deux;
+}
+
+#trois {
+    grid-area: trois;
+}
+
+#quatre {
+    grid-area: quatre;
+}
+
+#cinq {
+    grid-area: cinq;
+}
+
+#six {
+    grid-area: six;
+}
+
+#sept {
+    grid-area: sept;
+}
+
+#huit {
+    grid-area: huit;
+}
+
+#neuf {
+    grid-area: neuf;
+}
+
+#zero {
+    grid-area: zro;
+}
+
+#virgule {
+    grid-area: virgule;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#moins {
+    grid-area: moins;
+}
+
+#multi {
+    grid-area: multi;
+}
+
+#division {
+    grid-area: div;
+}
+
+#egal {
+    grid-area: egal;
+}
+
+#reset {
+    grid-area: reset;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+}
